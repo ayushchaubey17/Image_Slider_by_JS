@@ -35,8 +35,6 @@ function showSlides() {
 
 function stop() {
 	
-	st.style.backgroundColor ="purple";
-    console.log("stop")
     clearInterval(myint);
 }
 
@@ -45,7 +43,4 @@ function start() {
     setInterval(showSlides, 2000);
 }
 
-
-let st = document.getElementById("start");
-let end = document.getElementById("end");
 
