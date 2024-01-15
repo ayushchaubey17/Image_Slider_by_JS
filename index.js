@@ -1,7 +1,7 @@
 console.log("hyy")
 let slideIndex = 0;
-const myint = setInterval(showSlides, 1000);
-
+let  myint = setInterval(showSlides, 1000);
+let a =1;
 
 function showSlides() {
 	
@@ -33,14 +33,25 @@ function showSlides() {
 }
 
 
-function stop() {
-	
-    clearInterval(myint);
-}
-
+let obj = document.getElementById('bt1');
 
 function start() {
-    setInterval(showSlides, 2000);
+	
+	if(a == 1 ){
+		clearInterval(myint);
+		a++;
+	}
+	else{
+	myint =	setInterval(showSlides, 1000);
+		a--;
+	}
+	
+    
+	
 }
+
+
+
+
 
 

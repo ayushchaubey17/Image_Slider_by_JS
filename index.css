@@ -59,6 +59,8 @@ img{
 	border-radius: 30%;
 	font-weight: bold;
 	color: blue;
+	cursor: pointer;
+	padding: 3px;
 	box-shadow: 2px 2px 3px  grey;
 	margin-bottom: 10px;
 }
